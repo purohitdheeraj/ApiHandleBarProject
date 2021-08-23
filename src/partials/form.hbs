@@ -1,0 +1,25 @@
+
+<div id="modal">
+		<div id="modal-content">
+            <button id="close">&times</button>
+            
+            <div>
+            <div class="modal-title">Add Movie</div>  
+            <form method="POST" id="submitForm">
+            <div class="title-wrap">
+                <label for="title">Title</label><br/>
+            <input type="text" name="title" id="title" placeholder="add your movie title..." required>
+            <span id="validate-title"></span>
+            </div>
+            <div class="description-wrap">
+                <label for="description">Description</label><br/>
+                <textarea id="description" name="description" rows="4" cols="40" placeholder="add movie description..." required></textarea>
+                <span id="validate-description"></span>
+            </div>
+            <div class="form-image"><img src="https://pbs.twimg.com/media/Ex5gb2AW8AcVGRX.jpg" id="image-display"></div>
+            <button class="submit" id="submit" type="submit" >Submit</button>
+          </form>
+        </div>
+			</div>
+		</div>
+    </div>

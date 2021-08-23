@@ -1,0 +1,8 @@
+{{> header}}
+{{#if moviedata}}
+    {{> form}}
+    {{> main newData=moviedata}}
+{{else}}
+        {{>error data}}
+{{/if}}
+{{> footer}}

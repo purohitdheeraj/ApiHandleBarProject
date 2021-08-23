@@ -1,0 +1,23 @@
+<section class="main-content">
+    <div class="container">
+    {{#each  newData}}
+            <div class="card" id="{{this.id}}">
+                <div class="data-controls">
+                    <button id="editBtn" class="edit-card" >✎</button>
+                <button id="deleteBtn">❌</button>
+                </div>
+                
+            <input type="hidden" id="movie-id">
+            <div class="card-content">
+            <h1>{{title}}</h1>
+            <img id="imgid" src="{{img_url}}" alt="image-no{{this.id}}">
+            <div class="movie-over">
+                <p>{{description}}</p>
+            </div>
+            
+            </div>
+            
+            </div>    
+    {{/each}}
+</div>
+</section>
